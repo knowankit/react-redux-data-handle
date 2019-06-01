@@ -1,0 +1,32 @@
+{
+    "extends": [
+        "standard",
+        "plugin:react/recommended"
+    ],
+    "plugins": [
+        "react"
+    ],
+    "parserOptions": {
+        "parser": "babel-eslint",
+        "ecmaVersion": 9,
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "rules": {
+        "jsx-quotes": [
+            "error",
+            "prefer-single"
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ]
+    },
+    "settings": {
+        "react": {
+            "version": "16.5.2"
+        }
+    },
+    "parser": "babel-eslint"
+}
