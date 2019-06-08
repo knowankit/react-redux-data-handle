@@ -4,7 +4,7 @@ export class Food extends Component {
   render () {
     return (
       <div className=''>
-        Hello from Home
+        Hello from Food
       </div>
     )
   }

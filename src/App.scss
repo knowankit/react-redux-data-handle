@@ -1,16 +1,19 @@
 .main-area {
-    background-image: url('/images/dinner.jpg');
+    background: linear-gradient(
+        rgba(37, 36, 36, 0.45), 
+        rgba(255, 203, 8, 0.45)
+      ), url('/images/dinner.jpg');
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 100%;
 }
 
 .menu-col {
     padding: 0px;
     .menu {
-    width: 200px;
+    width: 100%;
     background-color: white;
     height: 100vh;
     ul {
@@ -28,4 +31,22 @@
     }
    
 }
+}
+
+// Contact Component
+
+.contact {
+    margin-top: 200px;
+    width: 500px;
+    // background-color: #26292c;
+    // color: white;
+    height: 300px;
+    font-size: 25px;
+    form {
+        top: calc(50% - 100px);
+        position: relative;
+        div {
+            padding: 0px;
+        }
+    }
 }
