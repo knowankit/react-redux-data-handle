@@ -1,0 +1,31 @@
+.main-area {
+    background-image: url('/images/dinner.jpg');
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.menu-col {
+    padding: 0px;
+    .menu {
+    width: 200px;
+    background-color: white;
+    height: 100vh;
+    ul {
+        padding: 0px;
+        position: relative;
+        top: calc(50% - 110px);
+    li {
+        list-style: none;
+        padding: 10px 0px;
+
+        a{
+            text-decoration: none;
+        }
+    }
+    }
+   
+}
+}
