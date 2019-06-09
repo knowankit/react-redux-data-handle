@@ -1,0 +1,112 @@
+body{
+    height: 100%;
+}
+.main-area {
+    background: linear-gradient(
+        rgba(37, 36, 36, 0.45),
+        rgba(255, 203, 8, 0.45)
+      ), url('/images/dinner.jpg');
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.menu-col {
+    padding: 0px;
+    position: absolute;
+    .menu {
+        font-family: 'Encode Sans Expanded', sans-serif;
+    width: 50px;
+    background-color: #FFDC00;
+    height: 100vh;
+    ul {
+        padding: 0px;
+        position: relative;
+        top: calc(50% - 136px);
+    li {
+        list-style: none;
+        padding: 10px 0px;
+        cursor: pointer;
+         .fas{
+            color: black;
+         }
+
+        a{
+            text-decoration: none;
+        }
+        a:first-child{
+            //margin-top: 20px !important;
+        }
+    }
+
+    }
+
+}
+}
+
+// Contact Component
+
+.contact {
+    height: 300px;
+    font-size: 25px;
+    form {
+        color: white;
+        top: calc(50% - 90px);
+        position: relative;
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        div {
+            padding: 0px;
+        }
+    }
+}
+
+// Home component
+
+.home {
+    color: white;
+    width: 400px;
+    font-size: 30px;
+    position: relative;
+    top: calc(50% - 74px);
+    font-family: 'Encode Sans Expanded', sans-serif;
+}
+
+// Drinks component
+
+.drinks{
+    position: relative;
+    top: calc(50% - 19px);
+}
+
+// Food component
+
+.food{
+    position: relative;
+    top: calc(50% - 19px);
+}
+
+
+.menu-top {
+margin-left: auto;
+    margin-right: auto;
+    ul{
+
+        li{
+            list-style: none;
+            float: right;
+            padding: 0px 10px;
+            a{
+                text-decoration: none;
+
+                .fas {
+                    color: #FF851B;
+                }
+
+            }
+        }
+    }
+}
