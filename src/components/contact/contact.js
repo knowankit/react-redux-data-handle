@@ -33,13 +33,13 @@ class Contact extends Component {
           <div className='form-group '>
             <label htmlFor='name'>Name</label>
             <div className='col-sm-10'>
-              <input type='text' name='name' value={this.state.name} className='form-control' onChange={this.onUpdateContact} aria-describedby='name' placeholder='Name' />
+              <input type='text' name='name' value={this.props.contact.name} className='form-control' onChange={this.onUpdateContact} aria-describedby='name' placeholder='Name' />
             </div>
           </div>
           <div className='form-group '>
             <label htmlFor='email'>Email</label>
             <div className='col-sm-10'>
-              <input type='email' name='email' value={this.state.email} className='form-control' onChange={this.onUpdateContact} aria-describedby='email' placeholder='Email' />
+              <input type='email' name='email' value={this.props.contact.email} className='form-control' onChange={this.onUpdateContact} aria-describedby='email' placeholder='Email' />
             </div>
           </div>
         </form>
