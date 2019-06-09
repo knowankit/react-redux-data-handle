@@ -3,8 +3,8 @@ import { Menu } from '../menu'
 import { Home } from '../home'
 import { Personal } from '../personal'
 import Contact from '../contact/contact'
-import { Drinks } from '../drinks'
-import { Food } from '../food'
+import Drinks from '../drinks/drinks'
+import Food from '../food/food'
 
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 
@@ -14,8 +14,9 @@ export class MainArea extends Component {
       <Router>
         <div className='container-fluid main-area'>
           <div className='row'>
-            <div className='col-md-2 menu-col'> <Menu /></div>
-            <div className='col-md-10'>
+            <div className='menu-top'> <Menu /></div>
+            <div className='menu-col d-none'> <Menu /></div>
+            <div className='col-md-12'>
               <Route exact path='/' component={Home} />
               <Route exact path='/personal' component={Personal} />
               <Route exact path='/drinks' component={Drinks} />

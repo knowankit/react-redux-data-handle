@@ -6,11 +6,11 @@ export class Menu extends Component {
     return (
       <div className='menu text-center'>
         <ul>
-          <li><Link to='/'>Home</Link></li>
-          <li><Link to='/personal'>Personal</Link></li>
-          <li><Link to='/food'>Food</Link></li>
-          <li><Link to='/drinks'>Drinks</Link></li>
-          <li><Link to='/contact'>Contact</Link></li>
+          <li><Link to='/'><i className="fas fa-home fa-3x"></i></Link></li>
+          {/*<li><Link to='/personal'>Personal</Link></li>*/}
+          <li><Link to='/food'><i className="fas fa-bread-slice fa-3x"></i></Link></li>
+          <li><Link to='/drinks'><i className="fas fa-beer fa-3x"></i></Link></li>
+          <li><Link to='/contact'><i className="fas fa-address-book fa-3x" ></i></Link></li>
         </ul>
       </div>
     )

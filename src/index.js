@@ -6,15 +6,17 @@ import { combineReducers, createStore } from 'redux'
 import { Provider } from 'react-redux'
 import { contactReducer } from './reducers/contact-reducer'
 import { drinkReducer } from './reducers/drink-reducer'
+import { foodReducer } from './reducers/food-reducer'
 
 const combinedReducers = combineReducers({
   drink: drinkReducer,
-  contact: contactReducer
+  contact: contactReducer,
+  food: foodReducer
 })
 const store = createStore(combinedReducers,
   {
-    drink: 'New drink',
-    contact: 'New contact'
+    drink: '',
+    contact: {}
   },
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 )
